@@ -1,0 +1,26 @@
+#'bash install_dotfiles' to start
+echo "Copying all files in dotfiles/etc into home directory"
+cp -R etc/. ~
+#-R used to copy all files recursively
+
+#telling git to use .gitignore_global as a global .gitignore file
+git config --global core.excludesfile ~/.gitignore_global
+
+echo "Installing vim packages + config"
+
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+#-p for mkdir create all intermediate directories as necessary
+
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+#L redo curl request to moved location if indicated by requested page
+#S --show error with -s silences the progress meter/error messages
+#o write output to file instead of stdout
+
+#Adding/downloading vim plugins
+cd ~/.vim/bundle
+
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
+
+echo "Done. Source bashrc to reload shell"
