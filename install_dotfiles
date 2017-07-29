@@ -1,7 +1,23 @@
 #'bash install_dotfiles' to start
 echo "Copying all files in dotfiles/etc into home directory"
-cp -R etc/. ~
+#note $HOME and ~ are equivalent in OSX we use $HOME b/c according to specifications its set in Linux
+cp -R etc/. $HOME
 #-R used to copy all files recursively
+
+#Load env variables first
+echo "Loading environment variables"
+#TO-DO  distinguish between bash variables and generic environment variables
+
+#Run these install dotfiles on a fresh system
+source $DOTFILES/bin/install.sh
+source $DOTFILES/homebrew/install.sh
+source $DOTFILES/osx/install.sh
+source $DOTFILES/apps/install.sh
+
+
+#copies over bash settings, aliases, etc
+cp -R $DOTFILES/bash/. $HOME
+cp -R $DOTFILES/git/. $HOME
 
 #telling git to use .gitignore_global as a global .gitignore file
 git config --global core.excludesfile ~/.gitignore_global

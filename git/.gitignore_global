@@ -1,0 +1,27 @@
+# installed packages from npm
+node_modules
+bower_components
+
+#logs
+.log
+
+
+
+#ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+.DS_Store
+.project
+.idea
+.secret
+
+### vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
