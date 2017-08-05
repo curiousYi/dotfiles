@@ -6,6 +6,7 @@ echo "Setting up OS X..."
 binaries = (
     git
     node
+    yarn
 )
 
 brew install #{binaries[@]}
