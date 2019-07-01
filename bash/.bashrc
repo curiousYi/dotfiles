@@ -1,4 +1,4 @@
-f [ -d ${HOME}/bin ] ; then
+if [ -d ${HOME}/bin ]; then
  PATH="${HOME}/bin:${PATH}"
 fi
 
