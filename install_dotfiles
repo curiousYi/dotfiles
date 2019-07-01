@@ -3,9 +3,11 @@ echo "Copying all files in dotfiles/etc into home directory"
 #note $HOME and ~ are equivalent in OSX we use $HOME b/c according to specifications its set in Linux
 cp -R etc/. $HOME
 #-R used to copy all files recursively
+#above is jic the scripts screw something up
 
 #Load env variables first
 echo "Loading environment variables"
+DOTFILES=$HOME/dotfiles
 #TO-DO  distinguish between bash variables and generic environment variables
 
 #Run these install dotfiles on a fresh system
