@@ -1,6 +1,9 @@
 dotfiles
 =======
 Contains my OSX config for bash, vim, node, etc.
+*7/1/19*<br/>
+Updating some shell scripts I haven't run for a while.
+Need to go through install_dotfiles again and fix the broken parts.
 
 *8/17/17*<br/>
 Updated vim rc plugin settings. 
@@ -13,9 +16,6 @@ Set-up basic skeleton for bash profile and vim configuration
 Added some simple aliases
 
 **TO-DOs**
-- Figure out what everything in .bashrc does
-- see if there's a safe way to automate setting up git configuration
-- see if there's a way to automate installing apps/configuration on my desktop machine?
-- Level up in BASH
-- look at Erik's and Afra's dotfiles see what I can learn
-- update dotfiles to install vim plugins: ctrlp, vim airline, and NERDTree
+- Remedy the broken install scripts for OSX and apps install.sh
+- Used brew cask install to set-up initial stuff.
+https://medium.com/@deianisac/how-to-quickly-set-up-a-mac-b9f89aed0dc
