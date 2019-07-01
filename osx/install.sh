@@ -1,15 +1,14 @@
 #!/bin/bash
 
-echo "Setting up OS X..."
+echo "setting up osX"
 
-# Install Binaries
-binaries = (
-    git
-    node
-    yarn
-)
+binaries=(git
+        node
+        yarn)
 
-brew install #{binaries[@]}
+for binary in "${binaries[@]}"
+do
+        brew install $binary
+done
 
-#Cleanup brew installs
 brew cleanup
