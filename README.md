@@ -1,6 +1,7 @@
 dotfiles
 =======
 Contains my OSX config for bash, vim, node, etc.
+
 *7/1/19*<br/>
 Updating some shell scripts I haven't run for a while.
 Need to go through install_dotfiles again and fix the broken parts.
