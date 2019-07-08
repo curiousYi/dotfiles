@@ -25,7 +25,7 @@ function prompt {
   local WHITEBOLD="\[\033[1;37m\]"
   local RESETCOLOR="\[\e[00m\]"
 
-  export PS1="\n $RED$PWD $PURPLE@ $GREEN\w $RESETCOLOR$GREENBOLD\$(git branch 2> /dev/null)"
+  export PS1="\n $RED$PWD $PURPLE@ $GREEN\w $RESETCOLOR$GREENBOLD\$(git branch 2> /dev/null) . "
 
 }
 
