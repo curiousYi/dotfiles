@@ -1,6 +1,8 @@
 dotfiles
 =======
 Contains my OSX config for bash, vim, node, etc.
+*8/9/19*<br/>
+Updated dot files 
 
 *7/1/19*<br/>
 Updating some shell scripts I haven't run for a while.
@@ -16,7 +18,13 @@ Saw https://github.com/driesvints/dotfiles dotfiles and was inspired to rewrite 
 Set-up basic skeleton for bash profile and vim configuration
 Added some simple aliases
 
+
 **TO-DOs**
 - Remedy the broken install scripts for OSX and apps install.sh
 - Used brew cask install to set-up initial stuff.
 https://medium.com/@deianisac/how-to-quickly-set-up-a-mac-b9f89aed0dc
+
+
+**Instructions**
+1. Git clone into home directory.
+2. cd into cloned directory; run `bash install_dotfiles`
