@@ -11,6 +11,7 @@ apps=(
     evernote
     spectacle
     flux
+    visual-studio-code
 )
 
 for binary in "${apps[@]}";
