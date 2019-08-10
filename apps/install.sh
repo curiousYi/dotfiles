@@ -11,7 +11,11 @@ apps=(
     evernote
     spectacle
     flux
-    keepassx
 )
 
-brew cask install --appdir="/Applications" #{apps[@]}
+for binary in "${apps[@]}";
+do
+        brew cask install --appdir="/Applications" $binary
+done
+
+brew cleanup
